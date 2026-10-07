@@ -38,9 +38,9 @@ Item {
     var query = searchQuery.trim().toLowerCase()
     if (query === "") return true
     var terms = {
-      "General": "general appearance display shape island style dynamic island colorful sidebar icons colorful live activities theme accent neutral motion animation speed hover lift pill notch style 24-hour clock",
+      "General": "general appearance display shape island style dynamic island colorful sidebar icons colorful live activities theme accent neutral motion animation speed hover lift pill notch style 24-hour clock font typography text size custom",
       "Search": "search ask with claude codex launcher answers",
-      "Live Activities": "live activities now playing media cover sound wave clipboard downloads system updates battery charging low bluetooth devices volume hud workspace workspaces indicator",
+      "Live Activities": "live activities now playing media cover sound wave clipboard downloads system updates battery charging low bluetooth devices network wifi ethernet volume brightness hud osd workspace workspaces indicator",
       "Notifications": "notifications banner duration",
       "Addons": "addons extensions extras store cart add remove " + host.addons.entries.map(function(addon) {
         return [addon.name, addon.description || ""].concat((addon.options || []).map(function(option) { return option.label || "" })).join(" ")
